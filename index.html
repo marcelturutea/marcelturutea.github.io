@@ -3,44 +3,107 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Marcel Turutea | Stampa 3D</title>
-
+  <title>Marcel Turutea | Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
-<body style="margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:#0b1020;color:#e9eefc;">
+<body>
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="name">Marcel <span class="accent">Turutea</span></span>
+        <span class="tag">Tecnico R&D • Maker • Drone</span>
+      </a>
 
-  <header style="padding:20px;border-bottom:1px solid #1b254a;">
-    <strong>Marcel Turutea</strong><br>
-    <span style="color:#aab6d6;">Stampa 3D su commissione</span>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="stampa-3d.html">Stampa 3D</a>
+        <a href="drone.html">Drone</a>
+        <a href="contatti.html">Contatti</a>
+      </nav>
+    </div>
   </header>
 
-  <main style="max-width:900px;margin:40px auto;padding:0 20px;">
-    <h1>Trasformo idee in oggetti reali.</h1>
-    <p style="color:#aab6d6;line-height:1.6;">
-      Realizzo stampe 3D personalizzate: portachiavi, oggetti per la casa,
-      statuette e pezzi unici su richiesta.
-      Stampo con Bambu Lab A1 per risultati precisi e affidabili.
-    </p>
+  <main class="container">
+    <section class="hero">
+      <span class="badge">Portfolio personale</span>
+      <h1>Progetto, costruisco e racconto.</h1>
+      <p>
+        Sono Marcel Turutea: lavoro come Tecnico R&D e nel tempo libero mi occupo di stampa 3D e riprese con drone.
+        Qui trovi chi sono, cosa faccio e i miei progetti.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="contatti.html">Contattami</a>
+        <a class="btn" href="stampa-3d.html">Vedi Stampa 3D</a>
+        <a class="btn" href="drone.html">Vedi Drone</a>
+      </div>
+    </section>
 
-    <h2>Cosa realizzo</h2>
-    <ul style="line-height:1.8;color:#aab6d6;">
-      <li>Portachiavi personalizzati</li>
-      <li>Oggetti utili per casa e scrivania</li>
-      <li>Statuette e decorazioni</li>
-      <li>Pezzi custom su misura</li>
-    </ul>
+    <h2 class="section-title">Chi sono</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Profilo</h3>
+        <p>
+          Tecnico R&D con approccio pratico: dalla progettazione al prototipo, fino alla soluzione che funziona davvero.
+          Mi piace unire metodo, creatività e cura dei dettagli.
+        </p>
+      </div>
 
-    <p>
-      <a href="contatti.html" style="color:#3ad6ff;">Contattami</a> |
-      <a href="shop.html" style="color:#3ad6ff;">Vedi articoli</a>
-    </p>
+      <div class="card">
+        <h3>Cosa faccio oggi</h3>
+        <p>
+          Nel mio ruolo mi occupo di attività tecniche e di supporto allo sviluppo: analisi, miglioramento e verifica di soluzioni/prodotti.
+          (Qui inseriremo due righe più precise sul tuo lavoro.)
+        </p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Nel tempo libero</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Stampa 3D</h3>
+        <p>
+          Realizzo oggetti personalizzati e funzionali: portachiavi, accessori per la casa, pezzi su misura e prototipi.
+        </p>
+        <p style="margin-top:12px;">
+          <a class="btn" href="stampa-3d.html">Pagina Stampa 3D</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Riprese drone</h3>
+        <p>
+          Creo video e foto dall’alto per contenuti, eventi e location. L’obiettivo è raccontare bene, non solo “volare”.
+        </p>
+        <p style="margin-top:12px;">
+          <a class="btn" href="drone.html">Pagina Drone</a>
+        </p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Hobby & interessi</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Maker mindset</h3>
+        <p>
+          Mi piace sperimentare: progettazione, prototipazione, ottimizzazione e piccoli progetti “utili”.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Creatività e contenuti</h3>
+        <p>
+          Foto/video, montaggio e comunicazione dei progetti: far vedere bene quello che fai è metà del lavoro.
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      © <span id="y"></span> Marcel Turutea •
+      <a href="https://www.instagram.com/marcelturutea/" target="_blank" rel="noopener">Instagram</a> •
+      <a href="https://www.vinted.it/member/144831993" target="_blank" rel="noopener">Vinted</a>
+    </footer>
   </main>
 
-  <footer style="text-align:center;padding:20px;color:#aab6d6;border-top:1px solid #1b254a;">
-    © 2026 – Marcel Turutea
-  </footer>
-
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
