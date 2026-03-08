@@ -6,6 +6,7 @@
   <title>Stampa 3D | Marcel Turutea</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
   <header class="nav">
     <div class="container">
@@ -13,6 +14,7 @@
         <span class="name">Marcel <span class="accent">Turutea</span></span>
         <span class="tag">Tecnico R&D • Maker • Drone</span>
       </a>
+
       <nav class="menu">
         <a href="index.html">Home</a>
         <a href="stampa-3d.html">Stampa 3D</a>
@@ -24,13 +26,77 @@
 
   <main class="container">
     <section class="hero">
+      <span class="badge">Bambu Lab A1</span>
       <h1>Stampa 3D</h1>
-      <p>Pagina in costruzione: qui inserirò esempi, servizi e lavori.</p>
+      <p>
+        Realizzo stampe 3D personalizzate: portachiavi, oggetti per la casa, statuette e pezzi su misura.
+        Qui trovi una selezione di lavori già realizzati.
+      </p>
       <div class="cta">
-        <a class="btn primary" href="contatti.html">Contattami</a>
-        <a class="btn" href="index.html">Torna alla Home</a>
+        <a class="btn primary" href="contatti.html">Richiedi un preventivo</a>
+        <a class="btn" href="shop.html">Vedi articoli su Vinted</a>
       </div>
     </section>
+
+    <h2 class="section-title">Galleria</h2>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="assets/img/3d-01.jpg" alt="Stampa 3D - Portachiavi personalizzato">
+        <div class="cap">Portachiavi personalizzato</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/3d-02.jpg" alt="Stampa 3D - Oggetto per la casa">
+        <div class="cap">Oggetto per la casa / organizer</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/3d-03.jpg" alt="Stampa 3D - Statuetta">
+        <div class="cap">Statuetta / decorazione</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/3d-04.jpg" alt="Stampa 3D - Pezzo custom">
+        <div class="cap">Pezzo custom su richiesta</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/3d-05.jpg" alt="Stampa 3D - Supporto">
+        <div class="cap">Supporto / accessorio funzionale</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/3d-06.jpg" alt="Stampa 3D - Gadget">
+        <div class="cap">Gadget / idea regalo</div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Cosa posso realizzare</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Portachiavi & gadget</h3>
+        <p>Nomi, loghi, sagome, regali. Anche piccole serie.</p>
+      </div>
+      <div class="card">
+        <h3>Casa & scrivania</h3>
+        <p>Organizer, supporti, ganci, accessori utili e personalizzati.</p>
+      </div>
+      <div class="card">
+        <h3>Statuette</h3>
+        <p>Decorazioni, figure, oggetti da esposizione.</p>
+      </div>
+      <div class="card">
+        <h3>Custom su misura</h3>
+        <p>Mi mandi idea/foto/sketch: ti propongo una soluzione e la stampo.</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      © <span id="y"></span> Marcel Turutea
+    </footer>
   </main>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
