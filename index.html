@@ -3,77 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il mio Portfolio - Home</title>
-    <style>
-        /* Questo è un po' di CSS per rendere la pagina gradevole. 
-           In futuro potremo spostarlo in un file separato! */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            /* Qui puoi inserire il tuo sfondo grafico carino */
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            color: #333;
-            text-align: center;
-        }
-        header {
-            background-color: #333;
-            padding: 20px;
-        }
-        /* Stile per i link di navigazione */
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .intro-section {
-            padding: 50px 20px;
-        }
-        /* Stile per la tua immagine profilo */
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%; /* Rende l'immagine rotonda */
-            object-fit: cover;
-            border: 3px solid #333;
-        }
-        .social-links a {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+    <title>Mio Portfolio | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="droni.html">Riprese Drone</a>
-            <a href="stampa3d.html">Stampa 3D</a>
-        </nav>
-    </header>
-
-    <main class="intro-section">
-        <img src="mia-foto.jpg" alt="Una foto di me" class="profile-img">
-        
-        <h1>Ciao, benvenuto nel mio spazio!</h1>
-        <p>Qui puoi trovare i miei lavori con le riprese via drone e le mie creazioni in stampa 3D.</p>
-
-        <div class="social-links">
-            <p>Trovami anche su:</p>
-            <a href="#" target="_blank">Il mio Instagram</a>
-            <a href="#" target="_blank">Instagram Stampa 3D</a>
-            <a href="#" target="_blank">Il mio Vinted</a>
+    <nav class="nav">
+        <div class="container">
+            <div class="brand">
+                <span class="name">Il Mio <span class="accent">Portfolio</span></span>
+                <span class="tag">Creativity & Tech</span>
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="droni.html">Drone</a>
+                <a href="stampa3d.html">Stampa 3D</a>
+            </div>
         </div>
+    </nav>
+
+    <main class="container">
+        
+        <section class="hero">
+            <div style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+                <img src="mia-foto.jpg" alt="Foto Profilo" style="width: 120px; height: 120px; border-radius: 20px; object-fit: cover; border: 2px solid var(--acc1);">
+                
+                <div style="flex: 1; min-width: 300px;">
+                    <h1>Ciao, benvenuto nel mio spazio!</h1>
+                    <p>Appassionato di tecnologia, riprese aeree e creazione digitale. Esplora i miei progetti e i servizi che offro.</p>
+                    
+                    <div class="cta">
+                        <a href="https://www.instagram.com/tuo_profilo" target="_blank" class="btn primary">Instagram</a>
+                        <a href="https://www.vinted.it/tuo_profilo" target="_blank" class="btn">Vinted</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="section-title">Cosa faccio</h2>
+        
+        <div class="grid">
+            
+            <div class="card">
+                <span class="badge">Servizio</span>
+                <h3>Riprese con Drone</h3>
+                <p>Offro servizi di ripresa aerea professionale per eventi, immobili o video creativi. Scopri la mia attrezzatura e i miei lavori.</p>
+                <br>
+                <a href="droni.html" class="btn" style="display: block; text-align: center;">Vedi Proposta Drone</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Libreria</span>
+                <h3>Stampa 3D</h3>
+                <p>La mia collezione di stampe, timelapse dei processi di creazione e modelli realizzati. Clicca per vedere la gallery.</p>
+                <br>
+                <a href="stampa3d.html" class="btn" style="display: block; text-align: center;">Esplora Stampe 3D</a>
+            </div>
+
+        </div>
+
+        <div class="card" style="grid-column: span 12; text-align: center; margin-bottom: 40px;">
+            <h3>Segui la mia Stampa 3D su Instagram</h3>
+            <p>Ho aperto una pagina dedicata dove pubblico costantemente nuovi progetti. Contattami pure lì!</p>
+            <br>
+            <a href="https://www.instagram.com/tua_pagina_3d" target="_blank" class="btn primary">Pagina Instagram 3D</a>
+        </div>
+
+        <footer class="footer">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span>© 2024 - Creato con il mio Partner di Programmazione</span>
+                <span class="badge">Online</span>
+            </div>
+        </footer>
+
     </main>
 
 </body>
