@@ -3,20 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mio Portfolio | Home</title>
+    <title>Portfolio | Creatività & Tecnologia</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Aggiunta di un tocco di stile extra direttamente qui per non farti modificare il file CSS */
+        .profile-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+        .profile-wrapper::before {
+            content: "";
+            position: absolute;
+            inset: -5px;
+            background: linear-gradient(45deg, var(--acc1), var(--acc2));
+            border-radius: 24px;
+            z-index: -1;
+            filter: blur(10px);
+            opacity: 0.7;
+        }
+        .hero-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 20px 0;
+        }
+        .hero-text h1 {
+            background: linear-gradient(90deg, #fff, var(--muted));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
 <body>
 
     <nav class="nav">
         <div class="container">
             <div class="brand">
-                <span class="name">Il Mio <span class="accent">Portfolio</span></span>
-                <span class="tag">Creativity & Tech</span>
+                <span class="name">NOME<span class="accent">COGNOME</span></span> <span class="tag">Digital Creator</span>
             </div>
             <div class="menu">
                 <a href="index.html">Home</a>
-                <a href="droni.html">Drone</a>
+                <a href="droni.html">Drone Service</a>
                 <a href="stampa3d.html">Stampa 3D</a>
             </div>
         </div>
@@ -25,54 +53,61 @@
     <main class="container">
         
         <section class="hero">
-            <div style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
-                <img src="mia-foto.jpg" alt="Foto Profilo" style="width: 120px; height: 120px; border-radius: 20px; object-fit: cover; border: 2px solid var(--acc1);">
+            <div class="hero-content">
+                <div class="profile-wrapper">
+                    <img src="mia-foto.jpg" alt="Foto Profilo" style="width: 140px; height: 140px; border-radius: 20px; object-fit: cover; display: block;">
+                </div>
                 
-                <div style="flex: 1; min-width: 300px;">
-                    <h1>Ciao, benvenuto nel mio spazio!</h1>
-                    <p>Appassionato di tecnologia, riprese aeree e creazione digitale. Esplora i miei progetti e i servizi che offro.</p>
+                <div class="hero-text" style="flex: 1; min-width: 300px;">
+                    <span class="badge" style="margin-bottom: 12px;">Disponibile per collaborazioni</span>
+                    <h1>Trasformo idee in <span class="accent">realtà digitale</span>.</h1>
+                    <p>Dalle prospettive uniche dei droni alla precisione tangibile della stampa 3D. Esplora il mio portfolio e scopri come posso aiutarti nel tuo prossimo progetto.</p>
                     
                     <div class="cta">
-                        <a href="https://www.instagram.com/tuo_profilo" target="_blank" class="btn primary">Instagram</a>
-                        <a href="https://www.vinted.it/tuo_profilo" target="_blank" class="btn">Vinted</a>
+                        <a href="https://www.instagram.com/TUO_IG" target="_blank" class="btn primary">Instagram Personale</a>
+                        <a href="https://www.vinted.it/TUO_VINTED" target="_blank" class="btn">Vinted Shop</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <h2 class="section-title">Cosa faccio</h2>
+        <h2 class="section-title">I miei Servizi</h2>
         
         <div class="grid">
-            
             <div class="card">
-                <span class="badge">Servizio</span>
+                <div style="font-size: 32px; margin-bottom: 10px;">🚁</div>
+                <span class="badge">Professional</span>
                 <h3>Riprese con Drone</h3>
-                <p>Offro servizi di ripresa aerea professionale per eventi, immobili o video creativi. Scopri la mia attrezzatura e i miei lavori.</p>
+                <p>Servizi fotografici e video aerei in 4K per eventi, edilizia e contenuti social. Qualità e sicurezza garantite.</p>
                 <br>
-                <a href="droni.html" class="btn" style="display: block; text-align: center;">Vedi Proposta Drone</a>
+                <a href="droni.html" class="btn" style="display: block; text-align: center;">Scopri il servizio</a>
             </div>
 
             <div class="card">
-                <span class="badge">Libreria</span>
-                <h3>Stampa 3D</h3>
-                <p>La mia collezione di stampe, timelapse dei processi di creazione e modelli realizzati. Clicca per vedere la gallery.</p>
+                <div style="font-size: 32px; margin-bottom: 10px;">🛠️</div>
+                <span class="badge">Creativity</span>
+                <h3>Stampa 3D & Design</h3>
+                <p>Progettazione e realizzazione di modelli unici. Guarda i miei timelapse e sfoglia la libreria delle stampe completate.</p>
                 <br>
-                <a href="stampa3d.html" class="btn" style="display: block; text-align: center;">Esplora Stampe 3D</a>
+                <a href="stampa3d.html" class="btn" style="display: block; text-align: center;">Esplora la libreria</a>
             </div>
-
         </div>
 
-        <div class="card" style="grid-column: span 12; text-align: center; margin-bottom: 40px;">
-            <h3>Segui la mia Stampa 3D su Instagram</h3>
-            <p>Ho aperto una pagina dedicata dove pubblico costantemente nuovi progetti. Contattami pure lì!</p>
-            <br>
-            <a href="https://www.instagram.com/tua_pagina_3d" target="_blank" class="btn primary">Pagina Instagram 3D</a>
+        <div class="card" style="grid-column: span 12; background: linear-gradient(135deg, rgba(182,107,255,0.1), rgba(58,214,255,0.1)); border: 1px solid var(--acc1);">
+            <div style="text-align: center; padding: 20px;">
+                <h3>Vuoi una stampa personalizzata?</h3>
+                <p>Segui la mia pagina dedicata e scrivimi in DM per preventivi o richieste speciali.</p>
+                <br>
+                <a href="https://www.instagram.com/TUO_IG_3D" target="_blank" class="btn primary">@TuaPaginaStampa3D</a>
+            </div>
         </div>
 
         <footer class="footer">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-                <span>© 2024 - Creato con il mio Partner di Programmazione</span>
-                <span class="badge">Online</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <span>© 2024 • Progettato con passione</span>
+                <div class="menu" style="gap: 20px;">
+                    <a href="mailto:tua-email@esempio.it" style="font-size: 14px;">Contattami</a>
+                </div>
             </div>
         </footer>
 
