@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stampa 3D | La mia Libreria</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Regola extra per mantenere le proporzioni originali senza tagli */
+        .card img, .card video {
+            width: 100%;
+            height: auto; /* Mantiene il formato originale della foto */
+            border-radius: 12px;
+            display: block;
+            margin-bottom: 12px;
+            background: #1a233a;
+        }
+    </style>
 </head>
 <body>
 
@@ -24,76 +35,79 @@
 
     <main class="container">
         <section class="hero">
-            <span class="badge">Bambu Lab P1S / X1C</span>
+            <span class="badge">Bambu Lab Specialist</span>
             <h1>Libreria <span class="accent">3D</span></h1>
-            <p>Dallo slicing alla realtà. In questa sezione trovi i miei lavori più recenti e i timelapse delle stampe in corso.</p>
+            <p>Una raccolta dei miei progetti stampati. Dai modelli articolati alle soluzioni tecniche.</p>
         </section>
 
-        <h2 class="section-title">In primo piano: Timelapse</h2>
-        <div class="card" style="grid-column: span 12; padding: 0; overflow: hidden; background: #000; border: 1px solid var(--acc2);">
-            <video autoplay muted loop playsinline style="width:100%; display: block;">
-                <source src="assets/img/Timelapse Braccio Abra.mp4" type="video/mp4">
-                Il tuo browser non supporta il video.
-            </video>
-            <div style="padding: 16px;">
-                <span class="badge">In Corso</span>
-                <h3>Braccio Abra</h3>
-                <p>Ripresa accelerata della precisione della mia stampante durante la creazione di componenti articolati.</p>
-            </div>
-        </div>
-
-        <h2 class="section-title">Le mie Stampe</h2>
+        <h2 class="section-title">La mia Gallery</h2>
         <div class="grid">
             
             <div class="card">
-                <img src="assets/img/Cavaliere porta penne.jpeg" alt="Cavaliere Oro" style="width:100%; border-radius:12px; height:250px; object-fit:cover;">
-                <span class="badge" style="margin-top:12px;">Silk Gold PLA</span>
+                <video autoplay muted loop playsinline>
+                    <source src="assets/img/Timelapse Braccio Abra.mp4" type="video/mp4">
+                </video>
+                <span class="badge">Timelapse</span>
+                <h3>In fase di stampa</h3>
+                <p>Ripresa accelerata della Bambu Lab in azione.</p>
+            </div>
+
+            <div class="card">
+                <img src="assets/img/Cavaliere porta penne.jpeg" alt="Cavaliere Oro">
+                <span class="badge">Silk Gold</span>
                 <h3>Cavaliere Porta Penne</h3>
-                <p>Esempio di stampa estetica con finitura metallica. Un pezzo iconico per ogni scrivania.</p>
+                <p>Dettaglio della finitura lucida e dei supporti rimossi.</p>
             </div>
 
             <div class="card">
-                <img src="assets/img/Draghi di berk.jpeg" alt="Draghi" style="width:100%; border-radius:12px; height:250px; object-fit:cover;">
-                <span class="badge" style="margin-top:12px;">Multi-color</span>
-                <h3>Draghi di Berk</h3>
-                <p>Sdentato e la Furia Chiara stampati con alta definizione dei dettagli alari.</p>
+                <img src="assets/img/Draghi di berk.jpeg" alt="Draghi">
+                <span class="badge">Fandom</span>
+                <h3>Sdentato & Furia Chiara</h3>
+                <p>Modelli iconici stampati con alta precisione.</p>
             </div>
 
             <div class="card">
-                <img src="assets/img/Alberello.jpeg" alt="Alberello" style="width:100%; border-radius:12px; height:250px; object-fit:cover;">
-                <span class="badge" style="margin-top:12px;">Articolato</span>
-                <h3>Alberello di Natale</h3>
-                <p>Simpatico modello con gambe articolate, perfetto per decorare mensole e angoli scrivania.</p>
+                <img src="assets/img/Alberello.jpeg" alt="Alberello">
+                <span class="badge">Articolato</span>
+                <h3>Alberello Flexi</h3>
+                <p>Modello con giunti mobili stampato in un pezzo unico.</p>
             </div>
 
             <div class="card">
-                <img src="assets/img/Supporto Joystick.jpeg" alt="Supporto" style="width:100%; border-radius:12px; height:250px; object-fit:cover;">
-                <span class="badge" style="margin-top:12px;">Utility</span>
+                <img src="assets/img/Supporto Joystick.jpeg" alt="Supporto">
+                <span class="badge">Gaming</span>
                 <h3>Supporto Controller</h3>
-                <p>Stampa funzionale per l'organizzazione del setup da gaming. Robusto e minimale.</p>
+                <p>Soluzione funzionale per l'organizzazione del setup.</p>
             </div>
 
             <div class="card">
-                <img src="assets/img/Porta penne.jpeg" alt="Porta penne" style="width:100%; border-radius:12px; height:250px; object-fit:cover;">
-                <span class="badge" style="margin-top:12px;">Dual Color</span>
+                <img src="assets/img/Porta penne.jpeg" alt="Porta penne">
+                <span class="badge">Design</span>
                 <h3>Porta penne Hex</h3>
-                <p>Design geometrico a nido d'ape con interno a contrasto rosso. Massima precisione nelle pareti sottili.</p>
+                <p>Contrasto cromatico e struttura geometrica.</p>
             </div>
 
             <div class="card">
-                <img src="assets/img/Cavalieri statuette.jpeg" alt="Gundam" style="width:100%; border-radius:12px; height:250px; object-fit:cover;">
-                <span class="badge" style="margin-top:12px;">Grey PLA</span>
+                <img src="assets/img/Cavalieri statuette.jpeg" alt="Mech">
+                <span class="badge">Grey PLA</span>
                 <h3>Mech Warriors</h3>
-                <p>Statuette d'azione stampate in grigio tecnico per evidenziare ogni singolo pannello della corazza.</p>
+                <p>Focus sui dettagli tecnici della corazza.</p>
+            </div>
+
+            <div class="card">
+                <img src="assets/img/Supporto cellulare.jpeg" alt="Supporto cellulare">
+                <span class="badge">Utility</span>
+                <h3>Stand Smartphone</h3>
+                <p>Design minimale e pulito per uso quotidiano.</p>
             </div>
 
         </div>
 
-        <div class="card" style="margin-top: 30px; border: 1px solid var(--acc2); text-align: center; background: rgba(182,107,255,0.05);">
-            <h3>Ti piacciono questi modelli?</h3>
-            <p>Contattami sulla mia pagina Instagram dedicata per commissioni o informazioni sui materiali.</p>
+        <div class="card" style="margin-top: 30px; border: 1px solid var(--acc2); text-align: center; background: rgba(182,107,255,0.05); grid-column: span 12;">
+            <h3>Seguimi per nuovi progetti</h3>
+            <p>Aggiorno costantemente la mia pagina Instagram con nuovi timelapse e stampe.</p>
             <br>
-            <a href="https://www.instagram.com/IL_TUO_UTENTE_STAMPA3D" target="_blank" class="btn primary">@TuaPaginaStampa3D</a>
+            <a href="https://www.instagram.com/TUO_IG_3D" target="_blank" class="btn primary">@TuaPaginaStampa3D</a>
         </div>
 
         <footer class="footer">
